@@ -1,4 +1,4 @@
-FROM registry.access.redhat.com/ubi9/go-toolset:1.21.11-7.1724233645 as builder
+FROM registry.access.redhat.com/ubi9/go-toolset:1.21.11-9 as builder
 USER 0
 ENV LDFLAGS="-X github.com/open-policy-agent/gatekeeper/v3/pkg/version.Version=v3.15.1" \
     GO111MODULE=on \
